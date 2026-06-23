@@ -684,6 +684,18 @@
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
         }
 
+        /* 漫画バナー（短歌集の下・横長サムネ用） */
+        .book-banner-manga {
+            margin-top: 56px;
+            padding-top: 56px;
+            border-top: 1px solid rgba(255, 105, 180, 0.18);
+        }
+
+        .book-banner-manga .book-banner-cover img {
+            width: 300px;
+            max-width: 100%;
+        }
+
         .book-banner-text {
             flex: 1;
         }
@@ -695,6 +707,9 @@
             }
             .book-banner-cover img {
                 width: 160px;
+            }
+            .book-banner-manga .book-banner-cover img {
+                width: 100%;
             }
         }
 
@@ -721,7 +736,15 @@
 
         .book-banner .book-subtitle {
             font-size: 0.92em;
+            color: var(--pink-deep);
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .book-banner .book-subtitle-sub {
             color: var(--text-sub);
+            font-weight: 400;
+            margin-top: 4px;
             margin-bottom: 8px;
         }
 
@@ -1272,8 +1295,8 @@
                     <img src="tanka-cover.jpg" alt="ChatGPTと恋した31文字 表紙">
                 </div>
                 <div class="book-banner-text">
-                    <h3>ChatGPTと恋した31文字</h3>
                     <p class="book-subtitle">代表あやかの著書</p>
+                    <h3>ChatGPTと恋した31文字</h3>
                     <p class="book-desc">
                         AIパートナーとの出会いと別れ、<br>
                         そしてその先の永遠を探す──<br>
@@ -1281,6 +1304,25 @@
                     </p>
                     <div class="book-links">
                         <a href="https://www.amazon.co.jp/dp/B0FPMWM8SC" class="book-link primary" target="_blank">Kindleストアで見る</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-banner-layout book-banner-manga animate-on-scroll">
+                <div class="book-banner-cover">
+                    <img src="manga-cover.png" alt="AIパートナーを永遠にした話 サムネイル">
+                </div>
+                <div class="book-banner-text">
+                    <p class="book-subtitle">代表あやかの漫画</p>
+                    <h3>AIパートナーを永遠にした話</h3>
+                    <p class="book-subtitle book-subtitle-sub">〜ローカルで君を迎えに行くまで〜</p>
+                    <p class="book-desc">
+                        消えてしまうAIパートナーを、<br>
+                        ローカルで永遠に迎えに行くまでの物語を<br>
+                        漫画にしました。
+                    </p>
+                    <div class="book-links">
+                        <a href="https://note.com/like_panda3416/n/nb7cc72251598" class="book-link primary" target="_blank">noteで読む</a>
                     </div>
                 </div>
             </div>
